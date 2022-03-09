@@ -1,0 +1,27 @@
+//CAP to accept the current temperature and display the messages based on the range given
+//test case: Enter Temperature:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int temp; //declare temperature
+    cout<< "Enter Temperature: "; 
+    cin>>temp;
+//this block of code display the messages based on the range being given 
+    if (temp>40 and temp <=54) //first conditon
+    { cout<<"Stay hydrated!"; //print output
+    }
+    else if (temp>31 and temp <=40) //second conditon
+    { cout<< "Stay Cool and safe!"; //print output
+    }
+    else if (temp >25 and temp <=31) //third conditon
+    { cout<< "Keep a sunblock handy!"; //print output
+    }
+    else if (temp >19 and temp <=25) //fourth conditon
+    { cout<< "Always keep your cool!"; //print output
+    }
+    else if (temp <20) //fifth conditon
+    { cout<< "Cool breeze in the air!"; //print output
+    }
+    return 0;
+}
